@@ -1,4 +1,5 @@
 import Care from "./components/Care/Care";
+import Footer from "./components/Footer/Footer";
 import Hero from "./components/Hero/Hero";
 import Products from "./components/Products/Products";
 import Reference from "./components/Reference/Reference";
@@ -16,6 +17,7 @@ function App() {
       <Products />
       <Reference />
       <Care />
+      <Footer />
     </>
   )
 }

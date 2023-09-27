@@ -4,6 +4,7 @@ import cartIcon from '../../assets/cart-icon.svg'
 import searchIcon from '../../assets/search-icon.svg'
 import { HiMenuAlt3 } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
+import { heroSubtitle, heroTitle } from '../../data';
 import NavLink from '../NavLink/NavLink';
 import { useState } from 'react';
 import FadeIn from '../FadeIn/FadeIn';
@@ -20,9 +21,9 @@ const Hero = () => {
                 <img src={logo} alt="" />
                 <ul className='hidden md:flex items-start gap-10 lg:gap-[68px]'>
                     <NavLink to='services'>Services</NavLink>
-                    <NavLink to='products'>shop</NavLink>
+                    <NavLink to='products'>Shop</NavLink>
                     <NavLink to='reference'>Reference</NavLink>
-                    <NavLink to='care'>care</NavLink>
+                    <NavLink to='care'>Care</NavLink>
                 </ul>
                 <img src={cartIcon} alt="" className='hidden md:block cursor-pointer' />
                 <HiMenuAlt3 size={30} className='block md:hidden cursor-pointer text-white' onClick={() => setMobileMenu((prev) => !prev)}></HiMenuAlt3>
@@ -30,9 +31,9 @@ const Hero = () => {
                     <AiOutlineClose size={30} className='absolute top-5 right-5 cursor-pointer' onClick={() => setMobileMenu(false)} />
                     <ul className='pt-[60px] items-center flex flex-col gap-8'>
                         <NavLink to='services' mobileMenu>Services</NavLink>
-                        <NavLink to='products' mobileMenu>shop</NavLink>
+                        <NavLink to='products' mobileMenu>Shop</NavLink>
                         <NavLink to='reference' mobileMenu>Reference</NavLink>
-                        <NavLink to='care' mobileMenu>care</NavLink>
+                        <NavLink to='care' mobileMenu>Care</NavLink>
                     </ul>
                     <img src={cartIcon} className='mt-8 mx-auto' alt="" />
                 </div>
@@ -41,12 +42,12 @@ const Hero = () => {
 
             <FadeIn delay={0.2} direction='down' padding fullWidth>
 
-                <h1 className='mt-[90px] text-center text-5xl leading-tight xs:text-[64px] text-white max-w-[1050px]'>Awesome product</h1>
+                <h1 className='mt-[90px] text-center text-5xl leading-tight xs:text-[64px] text-white max-w-[1050px]'>{heroTitle}</h1>
             </FadeIn>
 
             <FadeIn delay={0.4} direction='down' padding fullWidth>
 
-                <h1 className='mt-6 text-center text-lg xs:text-xl text-white max-w-[500px]'>Awesome product</h1>
+                <h1 className='mt-6 text-center text-lg xs:text-xl text-white max-w-[500px]'>{heroSubtitle}</h1>
             </FadeIn>
 
             <FadeIn delay={0.2} direction='up' padding fullWidth>
