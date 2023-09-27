@@ -38,7 +38,9 @@ const FadeIn = ({ children, delay, direction, fullWidth, padding }) => {
                     type: 'tween',
                     delay: delay,
                     ease: [0.25, 0.25, 0.25, 0.75]
-                }} >
+                }}
+                className="w-full flex itemss-center justify-center"
+            >
                 {children}
 
             </motion.div>

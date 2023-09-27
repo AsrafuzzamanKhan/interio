@@ -62,26 +62,22 @@ export const careSubtitle = "Take care of plants with all your heart";
 export const careList = [
   {
     title: "Adjust Lighting",
-    subtitle:
-      "When caring for houseplants, make sure the room temperature is neither too cold nor too hot.",
+    subtitle:"When caring for houseplants, make sure the room temperature is neither too cold nor too hot.",
     img: sunIcon,
   },
   {
     title: "Don't water too often",
-    subtitle:
-      "Watering ornamental houseplants does not have to be done every day.",
+    subtitle:"Watering ornamental houseplants does not have to be done every day.",
     img: waterIcon,
   },
   {
     title: "Choose the right container.",
-    subtitle:
-      "Houseplants will need different containers depending on their type and size.",
+    subtitle:"Houseplants will need different containers depending on their type and size.",
     img: plantIcon,
   },
   {
     title: "Fertilize regularly",
-    subtitle:
-      "The nutrients most indoor houseplants need are nitrogen for balance and potassium for stem strength.",
+    subtitle:"The nutrients most indoor houseplants need are nitrogen for balance and potassium for stem strength.",
     img: temperatureIcon,
   },
 ];
